@@ -1,0 +1,3 @@
+FROM mysql:latest
+# prepare data
+COPY ./mysql/scripts/*.sql /docker-entrypoint-initdb.d/
